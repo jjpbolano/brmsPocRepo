@@ -1,0 +1,9 @@
+package example;
+
+import java.lang.Number;
+
+rule "SalaryGreater30000"
+	dialect "mvel"
+	when
+	then
+end
