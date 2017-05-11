@@ -5,5 +5,9 @@ import java.lang.Number;
 rule "SalaryGreater30000"
 	dialect "mvel"
 	when
+		mortgage : Mortgage( salary > 30000 )
 	then
+		modify( mortgage ) {
+				setInterestRate( 3.0 )
+		}
 end
