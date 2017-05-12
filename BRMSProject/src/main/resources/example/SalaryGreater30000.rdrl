@@ -4,6 +4,7 @@ import java.lang.Number;
 
 rule "SalaryGreater30000"
 	dialect "mvel"
+	no-loop true
 	when
 		mortgage : Mortgage( salary > 30000 )
 	then
